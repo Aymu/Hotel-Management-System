@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/room"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_srarch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入房客姓名"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bn_sure_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="确定" />
+
+    <Button
+        android:id="@+id/bn_return"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="返回" />
+
+    <LinearLayout
+        android:id="@+id/linersearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="姓 名          性 别    年 龄     电 话                     入住时间      房间号" />
+
+        <ListView
+            android:id="@+id/searchListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right" />
+
+        <Button
+            android:id="@+id/return_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+    </LinearLayout>
+</LinearLayout>
